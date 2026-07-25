@@ -25,26 +25,4 @@ A polished local music player built with React, TypeScript, Tailwind CSS, Framer
 
 ## Getting Started
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Start the development server:
-   ```bash
-   npm run dev
-   ```
-3. Open the app in your browser at http://localhost:3000/
-4. Click "Open local folder" to select a directory containing music files
-
-## Build
-
-To create a production build:
-
-```bash
-npm run build
-```
-
-## Notes
-
-- This app uses browser APIs that require a modern browser with support for the File System Access API.
-- Some browsers may restrict folder access, so use an updated Chromium-based browser for the best experience.
+[Go_live]()
