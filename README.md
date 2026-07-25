@@ -25,4 +25,4 @@ A polished local music player built with React, TypeScript, Tailwind CSS, Framer
 
 ## Getting Started
 
-[Go_live]()
+[Go_live](https://singa-music.vercel.app/)
