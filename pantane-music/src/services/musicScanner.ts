@@ -18,7 +18,7 @@ const scanDirectory = async (
 
   for await (const [name, entry] of iterator) {
     if (entry.kind === 'file' && isMusicFile(name)) {
-      const file = await entry.getFile();
+      const file = await (entry as FileSystemFileHandle).getFile();
       const track = await buildTrackFromFile(file);
       tracks.push(track);
     }
