@@ -84,6 +84,8 @@ export const Player = () => {
     return `${currentTrack.artist} • ${currentTrack.album}`;
   }, [currentTrack]);
 
+  const equalizerBars = Array.from({ length: 12 }, (_, index) => index);
+
   return (
     <motion.footer
       initial={{ opacity: 0, y: 20 }}
@@ -101,9 +103,23 @@ export const Player = () => {
           <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-fuchsia-600 to-violet-600 text-lg font-semibold text-white">
             {currentTrack ? currentTrack.title.charAt(0).toUpperCase() : '♫'}
           </div>
-          <div>
-            <p className="font-medium text-white">{currentTrack?.title ?? 'No track selected'}</p>
-            <p className="text-sm text-slate-400">{badge}</p>
+          <div className="flex min-w-0 flex-1 items-center gap-3">
+            <div>
+              <p className="font-medium text-white">{currentTrack?.title ?? 'No track selected'}</p>
+              <p className="text-sm text-slate-400">{badge}</p>
+            </div>
+            <div className="ml-2 flex items-end gap-1 rounded-full bg-slate-800/80 px-3 py-2">
+              {equalizerBars.map((bar) => (
+                <span
+                  key={bar}
+                  className={`w-1.5 rounded-full bg-gradient-to-t from-fuchsia-600 to-violet-400 transition-all duration-300 ${isPlaying ? 'animate-pulse' : 'opacity-60'}`}
+                  style={{
+                    height: `${Math.max(10, ((bar % 4) + 1) * 6)}px`,
+                    animationDelay: `${bar * 80}ms`,
+                  }}
+                />
+              ))}
+            </div>
           </div>
         </div>
 
