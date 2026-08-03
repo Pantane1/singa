@@ -26,3 +26,20 @@ A polished local music player built with React, TypeScript, Tailwind CSS, Framer
 ## Getting Started
 
 [Go_live](https://singa-music.vercel.app/)
+
+## 👤 Author
+
+**Wamuhu Martin** (Pantane1)
+
+- Portfolio: [wamuhu-martin.vercel.app](https://wamuhu-martin.vercel.app)
+- Designs: [pantane1.github.io/Designs.](https://pantane1.github.io/Designs./)
+- GitHub: [@Pantane1](https://github.com/Pantane1)
+- 
+<p align="center">
+  <a href="#"><img src="https://github.com/Pantane1/nf/blob/main/public/ph.png" alt="ph-logo">
+</p>
+
+<p align="center">
+  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=ACAF50&center=true&vCenter=true&multiline=false&lines=Built+Different" alt="pantane">
+</p>
+
